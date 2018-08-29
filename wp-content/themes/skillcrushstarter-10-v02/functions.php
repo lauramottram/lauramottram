@@ -30,6 +30,7 @@ function skillcrushstarter_setup() {
 
 	// Post thumbnails support
 	add_theme_support('post-thumbnails');
+	add_theme_support( 'post-formats', array( 'quote', 'video' ) );
 
 	/*
 	 * Let WordPress manage the document title.
@@ -86,3 +87,21 @@ function custom_excerpt_more($more) {
 	return '...<div class="read-more"><a href="'. get_permalink() . '"><span>Read more</span> &raquo;</a></div>';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
+
+// Adds body class, bonus challenge
+
+function skillcrushstarter_custom_body_classes( $classes ) {
+
+  $classes[] = '';
+
+  if ( is_active_sidebar( 'sidebar-1' )  || is_page_template( 'full-width.php' ) ) {
+
+     $classes[] = 'no-sidebar';
+
+  }
+
+  return $classes;
+
+}
+
+add_filter( 'body_class', 'skillcrushstarter_custom_body_classes' );

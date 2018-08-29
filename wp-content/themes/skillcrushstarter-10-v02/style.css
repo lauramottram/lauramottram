@@ -290,6 +290,15 @@ body {
 	padding-top: 2.3125em;
 	overflow: hidden;
 }
+
+.author header,
+.search header {
+	border-bottom: 1px solid #bfbfbf;
+	padding-bottom: 2.5em;
+	padding-top: 2.3125em;
+	overflow: hidden;
+}
+
 .page-header .top-logo {
 	color: inherit;
 	float: left;
@@ -425,14 +434,19 @@ body {
 	color: #45ac9d;
 	font: 600 .82em/1.65 'OpenSans', Arial, sans-serif;
 }
-.category .page-title {
+.category .page-title,
+{
 	font: 700 1.5em/2 'Montserrat', 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.034em;
 	margin: 0;
 }
-.category .page-title span {
+.category .page-title span,
+.author h1 span,
+.search h1 span {
 	color: #45ac9d;
 }
+
+
 .entry-summary a {
 	color: #45ac9d;
 	text-decoration: underline;
@@ -763,7 +777,7 @@ body {
 /* HOMEPAGE STYLES */
 .home {
 	width: 100%;
-	background: url(img/Skillcrush_Computer.jpg) no-repeat center center;
+	background: url(img/desktop_image.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -785,6 +799,7 @@ body {
 .home .content h1 {
 	font: 700 2.25em/1.5 'Montserrat', 'OpenSans', Arial, sans-serif;
 	margin: 0 0 1em;
+	color: #FF1540;
 }
 .home .content p {
 	font: 1em/2 'OpenSans', Arial, sans-serif;
@@ -792,9 +807,13 @@ body {
 }
 .home .content p a {
 	font-weight: 600;
-	text-decoration: underline;
 	color: #3b3b3b;
 }
+
+.home .content p a:hover {
+    color: #0580B2;
+}
+
 .home .content .social-btns {
 	margin-bottom: 1.875em;
 }
@@ -829,7 +848,7 @@ body {
 	background-size: cover;
 }
 .home .btn {
-	background: #45ac9d;
+	background: #259CCC;
 	color: #fff;
 	font: 700 1.125em/3.5 'Montserrat', 'OpenSans', Arial, sans-serif;
 	display: inline-block;
@@ -850,3 +869,25 @@ body {
 	}
 }
 /* End HOMEPAGE STYLES */
+
+/* FOOTER STYLES */
+.site-footer {
+	border-top: 1px solid #bfbfbf;
+	padding-top: 2em;
+	margin-bottom: 4em;
+}
+.site-footer, .site-footer p, .site-footer a {
+    color: #909090;
+    font-size: .9em;
+    line-height: 1.5;
+}
+/* End FOOTER STYLES */
+
+/* Landing page */
+
+.landing-page {
+   no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    margin-bottom: 50px;
+}
+
+/* Landing page end */

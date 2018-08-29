@@ -16,17 +16,13 @@ get_header(); ?>
 				<h1><?php the_title(); ?></h1>
 				<?php the_content(); ?>
 				<div class="social-btns">  <!-- populate or remove as many of these as you want -->
-					<a href="" class="soc-icon tw"></a>
 					<a href="" class="soc-icon fb"></a>
 					<a href="" class="soc-icon ln"></a>
-					<a href="" class="soc-icon db"></a>
 					<a href="" class="soc-icon gh"></a>
-					<a href="" class="soc-icon in"></a>
+
 				</div>
-				<a href="<?php echo site_url('/blog/'); ?>" class="btn">View My Blog</a>
+				<a href="<?php echo site_url('/home/'); ?>" class="btn">Work With Me</a>
 			<?php endwhile; ?>
 		</div>
 	</div>
 </section>
-
-<?php get_footer(); ?>
