@@ -141,11 +141,22 @@ article {
 }
 a {
 	text-decoration: none;
+	font-weight: bold;
 }
+
+a:visited {
+	color: #259CCC;
+}
+
+p a {
+	color: #FF1540;
+}
+
 b,
 strong {
 	font-weight: bold;
 	font-weight: 700;
+	color: #0580B2;
 }
 dfn,
 cite,
@@ -154,8 +165,8 @@ i {
 	font-style: italic;
 }
 p {
-	font-size: 16px;
-	font-size: 1em;
+	font-size: 18px;
+	font-size: 1.1em;
 	line-height: 1.75;
 	font-family: 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.01em;
@@ -245,7 +256,7 @@ input[type="button"],
 input[type="submit"] {
 	font: 700 1.125em/3.5 'Montserrat', 'OpenSans', Arial, sans-serif;
 	color: #fff;
-	background: #45ac9d;
+	background: #0580B2;
 	border: none;
 	padding: 0 2em;
 }
@@ -271,7 +282,6 @@ body {
 	display: -webkit-flex;
 	display: flex;
 	background: #fff;
-	border-top: 6px solid #45ac9d;
 	color: #3b3b3b;
 	font-size: 16px;
 	font-size: 1em;
@@ -280,15 +290,14 @@ body {
 	letter-spacing: -0.01em;
 }
 #page {
-	width: 90%;
-	max-width: 960px;
+	width: 80%;
 	margin: 0 auto;
 }
 .page-header {
-	border-bottom: 1px solid #bfbfbf;
 	padding-bottom: 2.5em;
 	padding-top: 2.3125em;
 	overflow: hidden;
+	width: 100%;
 }
 
 .author header,
@@ -304,8 +313,8 @@ body {
 	float: left;
 }
 .page-header .top-logo .title {
-	color: #45ac9d;
-	font: 700 1.88em/1.3125 'Montserrat', 'OpenSans', Arial, sans-serif;
+	color: #FF1540;
+	font: 700 2.5em/1.3125 'Montserrat', 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.034em;
 	display: block;
 	text-transform: uppercase;
@@ -313,12 +322,15 @@ body {
 .page-header .top-logo .sub-title {
 	color: inherit;
 	display: block;
+	font-size: 1.3em;
 }
 .page-header .top-nav {
 	padding-top: 1.375em;
 	display: inline-block;
 	width: 100%;
+	font-size: 1.3em;
 }
+
 .page-header .top-nav ul {
 	margin: 0;
 	background: #eeeeee;
@@ -332,7 +344,7 @@ body {
 	text-transform: uppercase;
 }
 .page-header .top-nav ul li:hover > a{
-	border-bottom: 1px solid #45ac9d;
+	border-bottom: 1px solid #0580B2;
 }
 .page-header .top-nav ul ul {
 	text-indent: 2em;
@@ -343,7 +355,7 @@ body {
 }
 .main-content {
 	vertical-align: top;
-	padding: 2em 0 0 0;
+
 }
 #sidebar {
 	display: none;
@@ -397,7 +409,7 @@ body {
 		display: -webkit-flex;
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: space-between;
+		justify-content: center;
 	}
 	.main-content {
 		flex-grow: 1;
@@ -412,7 +424,7 @@ body {
 }
 /* End BODY STYLES */
 
-/* BLOG STYLES */
+/* BLOG STYLES
 .post-entry {
 	border-bottom: 1px solid #bfbfbf;
 	padding-bottom: 1.875em;
@@ -428,10 +440,10 @@ body {
 	text-decoration: none;
 }
 .entry-title a:hover {
-	color: #45ac9d;
+	color: #0580B2;
 }
 .entry-time {
-	color: #45ac9d;
+	color: #0580B2;
 	font: 600 .82em/1.65 'OpenSans', Arial, sans-serif;
 }
 .category .page-title,
@@ -443,12 +455,12 @@ body {
 .category .page-title span,
 .author h1 span,
 .search h1 span {
-	color: #45ac9d;
+	color: #FF1540;
 }
 
 
 .entry-summary a {
-	color: #45ac9d;
+	color: #0580B2;
 	text-decoration: underline;
 	font-weight: 600;
 }
@@ -471,7 +483,7 @@ body {
 	font-size: 13px;
 	font-size: .8em;
 	font-family: 'OpenSans', Arial, sans-serif;
-	color: #45ac9d;
+	color: #0580B2;
 	font-weight: 600;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -481,7 +493,7 @@ body {
 	color: #3b3b3b;
 }
 .post-entry .read-more a:hover {
-	border-bottom: 1px solid #45ac9d;
+	border-bottom: 1px solid #0580B2;
 }
 .entry-footer .entry-terms {
 	color: #a6a6a6;
@@ -497,7 +509,7 @@ body {
 	text-transform: capitalize;
 }
 .entry-footer .entry-terms a:hover {
-	border-bottom: 1px solid #45ac9d;
+	border-bottom: 1px solid #0580B2;
 }
 .entry-terms span {
 	font-weight: normal;
@@ -510,9 +522,9 @@ body {
 .main-content .post-entry:last-child {
 	border-bottom: 0;
 }
-/* End BLOG STYLES */
+End BLOG STYLES */
 
-/* SIDEBAR STYLES */
+/* SIDEBAR STYLES
 #sidebar {
 	padding-top: 1.25em;
 }
@@ -536,7 +548,7 @@ body {
 	max-width: 175px;
 	margin: auto;
 	display: block;
-	border-radius: 50%; /* style not defined by the challenge code but an option to match image to site design */
+	border-radius: 50%; /* style not defined by the challenge code but an option to match image to site design
 }
 #sidebar .widget_text a {
 	color: #3b3b3b;
@@ -567,7 +579,7 @@ body {
 	border-left: none;
 	font: .875em/1.75em 'Open Sans', Arial, sans-serif;
 	height: 2.6em;
-	background: url('img/white-arrow-right.png') no-repeat center #45ac9d;
+	background: url('img/white-arrow-right.png') no-repeat center #0580B2;
 	color: #ffffff;
 	margin-left: -5px;
 	padding: 0;
@@ -576,7 +588,7 @@ body {
 #sidebar .widget_categories h2,
 #sidebar .widget_archive h2 {
 	font: 700 .875em/1.75 'OpenSans', Arial, sans-serif;
-	color: #45ac9d;
+	color: #0580B2;
 	margin: 0 auto 1.25em;
 }
 #sidebar .widget_categories ul li,
@@ -591,7 +603,7 @@ body {
 }
 /* End SIDEBAR STYLES */
 
-/* NEXT / PREV STYLES */
+/* NEXT / PREV STYLES
 #navigation {
 	background: #fff;
 	border: solid #bfbfbf;
@@ -614,7 +626,7 @@ body {
 }
 #navigation .left a,
 #navigation .right a {
-	color: #45ac9d;
+	color: #0580B2;
 	text-decoration: none;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -650,7 +662,7 @@ body {
 }
 /* End NEXT / PREV STYLES */
 
-/* SINGLE POST STYLES */
+/* SINGLE POST STYLES
 .single .post-entry {
 	border-bottom: none;
 }
@@ -686,7 +698,7 @@ body {
 	float: right;
 }
 .comment-list .comment a {
-	color: #45ac9d;
+	color: #0580B2;
 	text-decoration: none;
 }
 .comment-list .comment a:hover {
@@ -697,13 +709,13 @@ body {
 	text-transform: capitalize;
 }
 .comments-area .comment-reply-title {
-	color: #45ac9d;
+	color: #0580B2;
 	font: 700 1.176em/1.75 'Montserrat', 'OpenSans', Arial, sans-serif;
 	text-transform: uppercase;
 	margin: 2em 0 1em;
 }
 .comments-area .comment-reply-title a {
-	color: #45ac9d;
+	color: #0580B2;
 }
 .comments-area .comment-reply-title a:hover {
 	text-decoration: underline;
@@ -730,7 +742,7 @@ body {
 	border: 1px solid #BFBFBF;
 }
 .comments-area .comment-form p a {
-	color: #45ac9d;
+	color: #0580B2;
 }
 .comments-area .comment-form p a:hover {
 	text-decoration: underline;
@@ -749,7 +761,7 @@ body {
 	border: 1px solid #BFBFBF;
 }
 .comments-area .comment-form input[type="submit"] {
-	background: #45ac9d;
+	background: #0580B2;
 	width: 12.875em;
 	height: 3.5em;
 	font: 700 1.25em/2.5 'Montserrat', 'OpenSans', Arial, sans-serif;
@@ -763,7 +775,7 @@ body {
 .page .entry-title {
 	font-weight: 500;
 	text-align: center;
-    border-bottom: 0.07em solid #45ac9d;
+    border-bottom: 0.07em solid #0580B2;
     padding-bottom: .5em;
 }
 .page-template-full-width .page-header {
@@ -777,7 +789,7 @@ body {
 /* HOMEPAGE STYLES */
 .home {
 	width: 100%;
-	background: url(img/desktop_image.jpg) no-repeat center center;
+	background: url(img/stock-photo-charity-donate-help-give-saving-sharing-support-volunteer-concept-274847597.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -786,10 +798,13 @@ body {
 .home .page-header {
 	display: none;
 }
+
 .home .content {
-	max-width: 600px;
+	max-width: 800px;
 	background: #ffffff;
-	padding: 3em;
+	padding: 3.5em;
+	opacity: 0.97;
+	font-size: 1.2em;
 }
 .home .main-content {
 	display: block;
@@ -804,18 +819,18 @@ body {
 .home .content p {
 	font: 1em/2 'OpenSans', Arial, sans-serif;
 	margin-bottom: 2em;
-}
-.home .content p a {
-	font-weight: 600;
-	color: #3b3b3b;
+	line-height: 2.2rem;
 }
 
-.home .content p a:hover {
-    color: #0580B2;
+.home .content p strong {
+	font-weight: 700;
+	color: #0580B2;
 }
+
 
 .home .content .social-btns {
 	margin-bottom: 1.875em;
+	text-align: center;
 }
 .home .content .social-btns a {
 	display: inline-block;
@@ -885,9 +900,251 @@ body {
 
 /* Landing page */
 
-.landing-page {
-   no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-    margin-bottom: 50px;
+.landing-image img {
+	width: 100%;
+	margin-bottom: 80px;
+}
+
+.about-me {
+	display: inline;
+	margin-top: 80px;
+}
+
+.about-me h2 {
+	font-size: 1.8em;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.about-me-content {
+	margin-bottom: 50px;
+	text-align: left;
+	padding: 0 200px;
+}
+
+.headshot img {
+	float: right;
+	border-radius: 50%;
+	max-height: 230px;
+	margin-left: 50px;
+}
+
+.services {
+	background-color: #259CCC;
+	text-align: center;
+	color: white;
+	margin-top: 80px;
+
+}
+
+.services h2 {
+	margin-bottom: 60px;
+	font-size: 1.8em;
+	line-height: 1;
+	margin-top: 0;
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 80px;
+}
+
+.services h3 {
+	font-size: 1.4em;
+}
+
+.services h3,
+.services p {
+	margin: 0;
+}
+
+.services p {
+	margin-bottom: 40px;
+	line-height: 1.5;
+}
+
+.services-content {
+	text-align: left;
+	display: grid;
+	grid-column-gap: 80px;
+	grid-template-columns: auto auto;
+	margin-bottom: 15px;
+	padding: 0 200px 0 200px;
+}
+
+.services-column1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.services-column2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.fa {
+	float: left;
+	margin-right: 30px;
+}
+
+.services-button-style {
+	font: 700 2.5em/1.3125 'Montserrat', 'OpenSans', Arial, sans-serif;
+	font-size: 1.4em;
+	background-color: #FF153F;
+	padding: 0 1.25em;
+	height: 3.5em;
+	border: none;
+	margin-bottom: 50px;
+	color: white;
+}
+
+.featured-work h2 {
+	font-size: 1.8em;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.talk {
+	justify-content: center;
+}
+
+.talk h2 {
+	font-size: 1.8em;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.contact-form {
+	display: block;
+	text-align: center;
+}
+
+form {
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+	}
+
+input[type="button"],
+input[type="submit"] {
+	font: 700 2.5em/1.3125 'Montserrat', 'OpenSans', Arial, sans-serif;
+	font-size: 1.4em;
+	background-color: #FF153F;
+	padding: 0 2em;
+	height: 3em;
+	border: none;
+	margin-bottom: 50px;
+	color: white;
+	text-align: center;
 }
 
 /* Landing page end */
+
+/* Case Studies */
+
+article.case-study {
+  margin: 0 0px 0 0;
+}
+
+aside.case-study-sidebar {
+  float: left;
+  width: 314px;
+  margin: 0 40px 0 0;
+}
+
+div.case-study-images {
+  float: left;
+  width: 606px;
+}
+
+div.case-study-images img {
+
+  margin-bottom: 50px;
+  border: 1px solid #dddddd;
+}
+
+.case-study h4 {
+  font-size: 14px;
+  color: grey;
+  font-weight: lighter;
+}
+
+.case-study h3 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.case-study h3,
+.case-study h4 {
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+/* Case Studies on minimal-landing-page */
+
+.featured-work-content {
+	display: flex;
+}
+
+.homepage-featured-work {
+	display: block;
+}
+
+.featured-work ul {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.featured-work li {
+  text-align: center;
+  display: inline-block;
+  margin: 30px;
+}
+
+.featured-work li a {
+  text-align: center;
+}
+
+.site-content,
+.homepage-featured-work {
+  justify-content: center;
+}
+
+.featured-work h3 {
+  font-size: 1.3em;
+  text-align: center;
+	font: 'Montserrat', 'OpenSans', Arial, sans-serif;
+	color: #3b3b3b;
+}
+
+figure, img {
+	max-width: 100%;
+	height: 300px;
+}
+
+/*Case Study Archive Page */
+
+div.case-study-images img {
+	width: 100%;
+	height: auto;
+}
+
+._mi {
+  background: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 3px;
+
+}
+
+.social-media-navigation li  {
+    display: inline-block;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+}

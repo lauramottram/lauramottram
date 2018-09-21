@@ -105,3 +105,27 @@ function skillcrushstarter_custom_body_classes( $classes ) {
 }
 
 add_filter( 'body_class', 'skillcrushstarter_custom_body_classes' );
+
+// add font awesome
+
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+wp_enqueue_style( 'load-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+}
+
+// add case studies
+
+function create_custom_post_types() {
+    register_post_type( 'case_studies',
+        array(
+            'labels' => array(
+                'name' => __( 'Case Studies' ),
+                'singular_name' => __( 'Case Study' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'case-studies' ),
+        )
+    );
+}
+add_action( 'init', 'create_custom_post_types' );

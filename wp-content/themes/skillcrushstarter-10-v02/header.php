@@ -13,7 +13,7 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="A WordPress portfolio project site, built with Skillcrush.">
+	<meta name="description" content="Laura Mottram's WordPress portfolio  site.">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 

@@ -19,7 +19,7 @@ get_header(); ?>
 		<?php endwhile; ?>
 	</div>
 
-	
+
 </section>
 
 <?php get_footer(); ?>
