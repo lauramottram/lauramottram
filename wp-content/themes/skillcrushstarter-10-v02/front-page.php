@@ -16,9 +16,8 @@ get_header(); ?>
 				<h1><?php the_title(); ?></h1>
 				<?php the_content(); ?>
 				<div class="social-btns">  <!-- populate or remove as many of these as you want -->
-					<a href="" class="soc-icon fb"></a>
-					<a href="" class="soc-icon ln"></a>
-					<a href="" class="soc-icon gh"></a>
+					<a href="https://www.linkedin.com/in/laura-mottram/" target="_blank" class="soc-icon ln"></a>
+					<a href="https://github.com/lauramottram" target="_blank" class="soc-icon gh"></a>
 
 				</div>
 				<a href="<?php echo site_url('/home/'); ?>" class="btn">Work With Me</a>

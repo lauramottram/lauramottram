@@ -32,8 +32,11 @@ get_header(); ?>
 				<img src="http://localhost:8888/wordpress/wp-content/uploads/2018/05/IMG_2363.jpg">
 			</div>
 			<p>I have been <strong>designing and developing websites</strong> for not-for-profit organizations for over 15 years, and have worked for organizations including the <strong>Red Cross, Tourettes Action and Leonard Cheshire Disability Kenya</strong>.<p>
-			<p>My experience as a <strong>successful fundraiser and communicator</strong> means I understand what your organization needs. I build in Wordpress as it offers easy-to-maintain sites, and a wealth of options for fundraising and communicating with supporters.</p>
-			<p>I love exploring and learning, and would love to work with you. Find out <a href="http://localhost:8888/wordpress/about/">more about me</a>.</p>
+			<p>My experience as a <strong>successful fundraiser and communicator</strong> means I understand what your organization needs. I build in Wordpress as it offers easy-to-maintain sites, and a wealth of options for fundraising and communicating with supporters and members.</p>
+			<p>I also love building websites for <strong>adventures</strong> - just like the one I made for my <strong>15,000 mile cycle ride around South America</strong> in 2011. If you are planning your own trip or have a passion you want to share with others, I would love to work with you on it.</p>
+			<div class="about-me-button">
+				<button class=about-me-button-style type="button"><a href="http://localhost:8888/wordpress/about/">More about me</a></button>
+			</div>
 		</div>
 	</div>
 
@@ -113,9 +116,11 @@ get_header(); ?>
 
 <!-- #contact form -->
 
-<section class="talk">
+<section id="let-talk" class="talk">
 	<div>
 		<h2>Let's Talk</h2>
+		<p><strong>Need a new website or want help jazzing up your existing one? I can help!</p>
+		<p>Drop me a message and let's talk.</strong></p>
 		<div class="contact-form">
 			<?php echo do_shortcode( '[contact-form-7 id="47358" title="Contact form 1"]' ); ?>
 		</div>

@@ -43,6 +43,7 @@ function skillcrushstarter_setup() {
 	// Register Menus
 	register_nav_menus ( array (
 		'primary-menu' => __( 'Primary Menu', 'skillcrushstarter' ),
+		'social-media'  => __( 'Social Media Nav', 'accelerate' ),
 	) );
 }
 add_action( 'after_setup_theme', 'skillcrushstarter_setup' );
